@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- android:orientation="vertical" ориентация для linearLayout -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/greeting"
+        android:background="#FFFF00"
+        android:textColor="#FF0000"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:layout_margin="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        />
+
+    <!-- android:background="#FFFF00" фон эл-ту  -->
+    <!-- android:textSize="32sp" размера текста эл-ту  -->
+    <!-- android:textColor="#FF0000" цвет текста  -->
+    <!-- android:layout_gravity="center" позиционирование элемента отн. родителя  -->
+    <!-- android:gravity="center" позиционирование текста эл-та отн. самого эл-та  -->
+    <!-- android:layout_marginTop="15dp" отскок эл-та от родителя  -->
+    <!-- android:paddingTop="20dp" отскок содержимого от границ эл-та  -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/turn_on"
+            android:layout_marginBottom="5dp"
+            android:paddingTop="15dp"
+            android:id="@+id/button-turn-on"
+            />
+
+        <!--  android:id="@+id/button-turn-on" создает ид. для элемента,
+        позволяя ссылаться на него в проекте -->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/turn_off"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/button-turn-off"
+            />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Just check me"
+            android:id="@+id/checkbox-check-me"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
